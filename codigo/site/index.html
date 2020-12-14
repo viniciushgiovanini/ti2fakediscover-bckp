@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Discover - Página Inicial</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script>
+        window.onload = () => {
+            let buttonPlay = document.querySelector('#jogar');
+            buttonPlay.addEventListener('click', () => {
+                window.location.href = 'jogo.html';
+            });
+        }   
+    </script>
+</head>
+<body>
+    <header id="header">
+        <h1 id="logo">Fake<span class="parte-logo">Discover</span></h1>
+        <nav id="links-header">
+            <a href="index.html" class="link-jogo">Início</a>
+            <a href="entenda.html" class="link-entenda">Entenda</a>
+            <a href="sobre.html" class="link-sobre">Sobre</a>
+            <a href="chatbot.html" class="link-chatbot">Ajuda</a>
+        </nav>
+    </header>   
+    <main id="main">
+        <div id="main-div">
+            <h1 class="h1-inicio">Bem vindo ao Fake Discover!</h1>
+            <p class="p-inicio">Eis o fake discover, um jogo simples que vai te ajudar a 
+                identificar fake news e evitar os seus malefícios! Vamos jogar!
+            </p>
+            <button id="jogar">
+                Jogar
+            </button>
+        </div>
+    </main>
+    <footer id="footer">
+        Copyright - Todos os direitos reservados - Fake Discover
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.texto-entenda{
+    background-color: orange;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    border: 1px solid  rgb(90, 89, 89);
+    flex-direction: column;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
+}
+@media screen and (max-width: 500px) {
+    .texto-entenda {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .texto-entenda {
+        font-size: small;
+        display: initial;
+    }
+}

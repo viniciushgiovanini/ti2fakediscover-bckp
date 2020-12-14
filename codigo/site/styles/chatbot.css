@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: relative;
+    background-image: url("../imgs/chatbotfundo2.jpg");
+}
+
+#header {
+    height: 20vh;
+}
+
+#header .logo {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#header .logo span {
+    color: white;
+}
+
+.link-voltar{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.botao-voltar {
+    margin: 10px 0 0 10px;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 5px;
+    font:inherit;
+    cursor: pointer;
+}
+
+#iframe-div {
+    height: 80vh;
+    position: relative;
+    bottom: 0;
+}
+
+.txtbot{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+    #header .logo {
+        font-size: 1.5em;
+    }
+    .txtbot{
+        width: 90%;
+        height: 70%;
+    }
+}

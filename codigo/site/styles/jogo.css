@@ -1,0 +1,101 @@
+#game-div {
+    height: 80%;
+    width: 80%;
+    background: orange;
+    border: 1px solid #5a5959;
+    flex-direction: column;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.75);
+}
+
+#placar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13%;
+}
+
+#nextNotice, #getFeedback {
+    padding: 10px 25px;
+    color: white;
+    background-color: rgb(52, 123, 231);
+    border-radius: 5px;
+    border-color: orange;
+}
+
+#parte-noticia, #feedbackDiv, #theEnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#parte-noticia {
+    height: 87%;
+}
+
+#noticeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+}
+
+#noticeDescription {
+    text-align: center;
+}
+
+#fakeOrTrueInputs {
+    margin: 10px 0;
+    display: flex;
+}
+
+#fakeOrTrueInputs label {
+    margin: 0 3px;
+}
+
+#inputsAndButtonDiv {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#feedDescription {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#correctH3 {
+    color: green;
+}
+
+#wrongH3 {
+    color: red;
+}
+
+@media screen and (max-width: 500px) {
+    #placar {
+        height: 8%;
+    }
+    #parte-noticia {
+        height: 92%;
+    }
+    #feedDescription {
+        font-size: initial;
+        padding: 4px;
+        margin: 0;
+    }
+    #fakeOrTrueInputs label {
+        margin: 0px;
+    }
+    #correctH3, #wrongH3 {
+        margin: 0;
+    }
+    #game-div {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,136 @@
+@mixin centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+};
+
+$great_blue: rgb(52, 123, 231);
+$great_grey: rgb(90, 89, 89);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../imgs/background.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#header {
+    height: 10vh;
+    background-color: rgba(181, 181, 181, 0.8);
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: relative;
+
+    nav {
+        font-size: 1.2rem;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 20px;
+
+        & > a {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                color: $great_blue;
+            }
+        }
+    }
+}
+
+#header:hover{
+    background-color: rgb(181, 181, 181);
+}
+
+#header .logo {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.6rem;
+    span {
+        color: white;
+    }
+}
+
+#main {
+    height: 85vh;
+    @include centralize;
+}
+
+#main #main-div {
+    @include centralize;
+    height: 80%;
+    width: 80%;
+    background: orange;
+    border: 1px solid $great_grey;
+    flex-direction: column;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 0px 80px 0px rgba(0,0,0,0.75);
+
+    #jogar {
+        padding: 10px 25px;
+        color: white;
+        background-color: $great_blue;
+        border-radius: 5px;
+        border-color: orange;
+    }
+}
+
+.h1-inicio {
+    font-style: bold;
+    color: whitesmoke;
+}
+
+.p-inicio {
+    text-align: center;
+    color: whitesmoke;
+    padding: 0 20px;
+}
+
+.img-notice {
+    width: 60%;
+    height: 55%;
+}
+
+#good-homer {
+    width: 60%;
+    height: 50%;
+}
+
+#footer {
+    height: 5vh;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: rgba(181, 181, 181, 0.8);
+    text-align: center;
+    height: auto;
+}
+
+#footer:hover {
+    background-color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width: 500px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .img-notice {
+        width: 90%;
+        height: 50%;
+    }
+    #good-homer {
+        width: 90%;
+        height: 50%;
+    }
+}
